@@ -1,0 +1,22 @@
+
+
+.btn:focus {outline:0;}
+
+// responsive typography
+html {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.main .container {
+  width: 70%;
+  @include media-breakpoint-down(sm) {
+    width: 80%;
+  }
+}

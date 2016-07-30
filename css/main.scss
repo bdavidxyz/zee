@@ -1,0 +1,95 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+
+
+/* Inject values for some bootstrap-related variables here
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+$enable-flex:               true;
+$enable-shadows:            false;
+$enable-transitions:        true;
+
+
+
+$spacer:                     1rem;
+$spacer-x:                   $spacer;
+$spacer-y:                   $spacer;
+$spacers: (
+  0: (x: 0, y: 0 ),
+  1: (x: $spacer-x, y: $spacer-y ),
+  2: (x: ($spacer-x * 2), y: ($spacer-y * 2) ),
+  3: (x: ($spacer-x * 3), y: ($spacer-y * 3) ),
+  4: (x: ($spacer-x * 4), y: ($spacer-y * 4) ),
+  5: (x: ($spacer-x * 5), y: ($spacer-y * 5) ),
+  6: (x: ($spacer-x * 6), y: ($spacer-y * 6) ),
+  7: (x: ($spacer-x * 7), y: ($spacer-y * 7) ),
+  8: (x: ($spacer-x * 8), y: ($spacer-y * 8) ),
+  9: (x: ($spacer-x * 9), y: ($spacer-y * 9) ),
+  10: (x: ($spacer-x * 10), y: ($spacer-y * 10) ),
+  11: (x: ($spacer-x * 11), y: ($spacer-y * 11) ),
+  12: (x: ($spacer-x * 12), y: ($spacer-y * 12) )
+  );
+
+
+
+/* Themes are defined here
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+{% if site.data.theme.atmosphere == "webdesign" %}
+  $headings-font-family:     "Lato", sans-serif;
+  $font-family-base:         "Lato", sans-serif;
+  $small-font-size:          80%;
+  $brand-primary:            #03A9F4;
+  $font-size-base:           1.2rem;
+  $lead-font-size:           1.4rem;
+  $font-size-h3:             1.35rem; 
+  $font-size-h4:             1.2rem;
+{% elsif site.data.theme.atmosphere == "technology" %}
+  $headings-font-family:    "Roboto Condensed", sans-serif;
+  $font-family-base:        "Roboto", sans-serif;
+  $small-font-size:         90%;
+  $brand-primary:           #6b15a1;
+  $font-size-base:          1.15rem;
+  $lead-font-size:          1.3rem;
+  $font-rsize-h3:            1.5rem; 
+  $font-size-h4:            1.25rem;
+{% else %} 
+  // CREATE YOUR OWN THEME BELOW
+  // $headings-font-family:    ;
+  // $font-family-base:        ;
+  // $small-font-size:         ;
+  // $brand-primary:           ;
+  // $font-size-base:          ;
+  // $lead-font-size:          ;
+  // $font-rsize-h3:           ; 
+  // $font-size-h4:            ;
+{% endif %}
+
+
+
+
+/* Import sass files here
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+// Import external librairies
+@import "bootstrap/bootstrap";
+
+//Import our own files
+@import "zee/override-bootstrap";
+@import "zee/utilities";
+
+//Import SCSS of sections here
+
+
+
+
+
+
+
+
+
+

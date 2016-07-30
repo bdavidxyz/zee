@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}">
+
+  {% include head.html %}
+
+  <body>
+
+    <main class="main" aria-label="Content">
+      {{ content }}
+    </main>
+
+    <!--startjs-->
+      {% include javascript/bootstrap/jquery.js.html %}
+      
+      <!-- javascript-related component are disabled by default, remove comment/endcomment liquid tags to include them -->
+      {% comment %} 
+        {% include javascript/bootstrap/holder.js.html %} 
+      {% endcomment %}
+      {% comment %} 
+        {% include javascript/bootstrap/tether.js.html %} 
+      {% endcomment %}
+      {% comment %} 
+        {% include javascript/bootstrap/bootstrap.js.html %} 
+      {% endcomment %}
+    <!--endjs-->
+
+  </body>
+
+</html>

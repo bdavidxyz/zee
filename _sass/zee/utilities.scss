@@ -1,0 +1,87 @@
+/* o-sudoku : allows to position a css box in a 3*3 grid
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.o-sudoku {
+  display:flex;  
+  flex-direction:column; 
+}
+.o-sudoku__1 {
+  margin-bottom:auto;
+  margin-right: auto;
+}
+.o-sudoku__2 {
+ margin-left: auto;
+ margin-right: auto;
+ margin-bottom: auto;
+}
+.o-sudoku__3 {
+ margin-left: auto;
+}
+.o-sudoku__4 {
+ margin-right: auto;
+ margin-top: auto;
+ margin-bottom: auto;
+}
+.o-sudoku__5 {
+  margin:  auto;
+}
+.o-sudoku__6 {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.o-sudoku__7 {
+  margin-top:auto;
+}
+.o-sudoku__8 {
+  margin-top:auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.o-sudoku__9 {
+  margin-top:auto;
+  margin-left: auto;
+}
+
+
+
+
+/* bootstrap-like variables
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.h-100 { height: 100% !important; } // notice w-100 exists in bootstrap
+
+
+
+
+/* visibility helpers
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.u-hidden {
+     opacity:0;
+}
+.u-visible {
+     opacity:1;
+}
+
+
+
+/* allows to include any CSS box in a SVG without using background
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.u-svgbox {
+  display: inline-block;
+  position: relative;
+}
+
+.u-svgbox svg { // forcing display block (inline when not) allows height to match perfectly between child parent. See http://codepen.io/davidb583/pen/wGOaJV
+  display: block;
+}
+
+.u-svgbox__same-size-as-svg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
