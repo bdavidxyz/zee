@@ -1,5 +1,11 @@
 
+// more variables
+$btn-padding-x-xl:               1.75rem;
+$btn-padding-y-xl:               1.25rem;
+$input-padding-x-xl:             1.75rem;
+$input-padding-y-xl:             1.25rem;
 
+// reset outline
 .btn:focus {outline:0;}
 
 // responsive typography
@@ -19,4 +25,17 @@ html {
   @include media-breakpoint-down(sm) {
     width: 80%;
   }
+}
+
+// bigger buttons
+.btn-xl {
+  @include button-size($btn-padding-y-xl, $btn-padding-x-xl, $font-size-lg, $btn-border-radius-lg);
+}
+
+// bigger form
+.form-control-xl {
+  padding: $input-padding-y-xl $input-padding-x-xl;
+  font-size: $font-size-lg;
+  line-height: $line-height-lg;
+  @include border-radius($input-border-radius-lg);
 }
