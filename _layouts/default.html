@@ -10,18 +10,18 @@
     </main>
 
     <!--startjs-->
-      {% include javascript/bootstrap/jquery.js.html %}
-      
-      <!-- javascript-related component are disabled by default, remove comment/endcomment liquid tags to include them -->
-      {% comment %} 
-        {% include javascript/bootstrap/holder.js.html %} 
-      {% endcomment %}
-      {% comment %} 
-        {% include javascript/bootstrap/tether.js.html %} 
-      {% endcomment %}
-      {% comment %} 
-        {% include javascript/bootstrap/bootstrap.js.html %} 
-      {% endcomment %}
+      {% include js-jquery.html %}
+      {% comment %} {% include js-holder.html %} {% endcomment %}
+      {% comment %} {% include js-tether.html %} {% endcomment %}
+      {% comment %} {% include js-bootstrap.html %} {% endcomment %}
+      {% comment %} {% include js-custom.html %} {% endcomment %}
+      {% include ownjs/own-navbar.html %}
+      {% comment %}{% include ownjs/own-whatitis-lightslider.html %}{% endcomment %}
+      {% comment %}{% include ownjs/own-whatitis.html %}{% endcomment %}
+      {% comment %}{% include ownjs/own-waypoint.js.html %}{% endcomment %}
+      {% include ownjs/own-c.html %}
+      {% include ownjs/own-animation.html %}
+      {% comment %}{% include ownjs/own-what2.html %}{% endcomment %}
     <!--endjs-->
 
   </body>

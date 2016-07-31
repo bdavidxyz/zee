@@ -1,0 +1,51 @@
+.hero__cta-container {
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+  } 
+}
+.hero-title {
+}
+.hero__title-text {
+  @extend .display-4;
+  font-weight: bold;
+}
+
+.hero-text {
+  @extend .lead; 
+  font-weight: 300;
+  font-size: $lead-font-size;
+  text-transform: uppercase;
+  letter-spacing: 0.17rem;
+}
+
+.hero-cta {
+  @include media-breakpoint-down(sm) {
+    max-width: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  // font-size: $lead-font-size;
+}
+
+.hero-input {
+  @extend .form-control;
+  @extend .form-control-xl;
+}
+
+.hero-button {
+  @extend .btn;
+  @extend .btn-primary;
+  @extend .btn-xl;
+  @extend .btn-block;
+  font-size: $lead-font-size;
+  // @extend .lead; 
+  // @include media-breakpoint-up(md) {
+  //   margin-left: 0.3rem;
+  // } 
+  // @include media-breakpoint-down(sm) {
+  //   margin-top: 0.3rem;
+  // }
+}

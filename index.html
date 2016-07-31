@@ -3,16 +3,20 @@ layout: default
 ---
   <!--include HTML section here, 
       don't forget to include SCSS and JS 
-      for a given section, if apply
-      -->
-
-<p>This is index.html, it will serve your whole one-page website.</p>
-<p>Delete its content, and replace it by pre-defined sections.</p>
-
-<ul>
-  <li>HTML of each section is under _includes/html/zee and must be include in index.html like this : <pre><code>&#123;&#37; include html/zee/navbar1.html &#37;&#125;</code></pre></li>
-  <li>CSS of each section is under _sass/zee/zee and must be include in css/main.scss like this : <pre><code>@import zee/navbar1.scss</code></pre></li>
-  <li>JS of each section is under _includes/javascript/zee and must be included in _layouts/default.html like this : <pre><code>&#123;&#37; include javascript/zee/navbar1.js.html &#37;&#125;</code></pre></li>
-</ul>
-<div>If you want to add   section "navbar1", you need to include navbar1.html, navbar1.js.html, and navbar1.scss as described above.</div>
-<div>SCSS and JS file may or may not be needed for a given section.</div>
+      for a given section, if apply-->
+  {% include ownhtml/own-hero.html %}
+  {% include ownhtml/own-separator.html %}
+  {% include ownhtml/own-navbar.html %}
+  {% include ownhtml/own-separator.html %}
+  {% include ownhtml/own-what.html %}
+  {% include ownhtml/own-separator.html %}
+  {% include ownhtml/own-howtouse.html %}
+  {% include ownhtml/own-separator.html %}
+  {% include ownhtml/own-love.html %}
+  {% include ownhtml/own-separator.html %}
+  {% include ownhtml/own-demo.html %}
+  {% include ownhtml/own-separator.html %}
+  {% include ownhtml/own-faq.html %}
+  {% include ownhtml/own-separator.html %}
+  {% include ownhtml/own-help.html %}
+  {% include ownhtml/own-footer.html %}

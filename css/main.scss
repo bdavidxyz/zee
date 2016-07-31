@@ -6,8 +6,8 @@
 
 
 
-/* Inject values for some bootstrap-related variables here
-–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Define variable here
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 $enable-flex:               true;
 $enable-shadows:            false;
@@ -34,10 +34,8 @@ $spacers: (
   12: (x: ($spacer-x * 12), y: ($spacer-y * 12) )
   );
 
-
-
-/* Themes are defined here
-–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Variables from template
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 {% if site.data.theme.atmosphere == "webdesign" %}
   $headings-font-family:     "Lato", sans-serif;
@@ -48,6 +46,7 @@ $spacers: (
   $lead-font-size:           1.4rem;
   $font-size-h3:             1.35rem; 
   $font-size-h4:             1.2rem;
+  // $headings-font-weight: 700;
 {% elsif site.data.theme.atmosphere == "technology" %}
   $headings-font-family:    "Roboto Condensed", sans-serif;
   $font-family-base:        "Roboto", sans-serif;
@@ -55,34 +54,50 @@ $spacers: (
   $brand-primary:           #6b15a1;
   $font-size-base:          1.15rem;
   $lead-font-size:          1.3rem;
-  $font-rsize-h3:            1.5rem; 
+  $font-size-h3:            1.5rem; 
   $font-size-h4:            1.25rem;
 {% else %} 
-  // CREATE YOUR OWN THEME BELOW
-  // $headings-font-family:    ;
-  // $font-family-base:        ;
-  // $small-font-size:         ;
-  // $brand-primary:           ;
-  // $font-size-base:          ;
-  // $lead-font-size:          ;
-  // $font-rsize-h3:           ; 
-  // $font-size-h4:            ;
+  //CREATE YOUR OWN THEME BELOW
+  // $headings-font-family:    "Roboto Condensed", sans-serif;
+  // $font-family-base:        "Roboto", sans-serif;
+  // $small-font-size:         90%;
+  // $brand-primary:           #6b15a1;
+  // $font-size-base:          1.15rem;
+  // $lead-font-size:          1.3rem;
+  // $font-rsize-h3:            1.5rem; 
+  // $font-size-h4:            1.25rem;
 {% endif %}
 
 
+$btn-padding-x-xl:               1.75rem;
+$btn-padding-y-xl:               1.25rem;
+$input-padding-x-xl:             1.75rem;
+$input-padding-y-xl:             1.25rem;
 
 
-/* Import sass files here
+/* Import sass file here
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-// Import external librairies
+// Import partials from `sass_dir` (defaults to `_sass`)
 @import "bootstrap/bootstrap";
 
-//Import our own files
-@import "zee/override-bootstrap";
-@import "zee/utilities";
+//Import our own businness
+@import "owncss/own-bootstrap-full-feature";
+@import "owncss/own-utilities";
+@import "owncss/own-common-typography";
+
+//External dependencies
+@import "owncss/own-animate";
 
 //Import SCSS of sections here
+@import "owncss/own-hero";
+@import "owncss/own-separator";
+@import "owncss/own-navbar";
+@import "owncss/own-what";
+@import "owncss/own-howtouse";
+@import "owncss/own-demo";
+@import "owncss/own-faq";
+@import "owncss/own-footer";
 
 
 
@@ -91,5 +106,39 @@ $spacers: (
 
 
 
+/* Override properties here
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+// responsive typography
+html {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 16px;
+  }
+}
+
+// // bigger buttons
+.btn-xl {
+  @include button-size($btn-padding-y-xl, $btn-padding-x-xl, $font-size-lg, $btn-border-radius-lg);
+}
+
+// bigger form
+.form-control-xl {
+  padding: $input-padding-y-xl $input-padding-x-xl;
+  font-size: $font-size-lg;
+  line-height: $line-height-lg;
+  @include border-radius($input-border-radius-lg);
+}
+
+.adaptable-container {
+  @extend .container;
+  width: 70%;
+  @include media-breakpoint-down(sm) {
+    width: 80%;
+  }
+}
 

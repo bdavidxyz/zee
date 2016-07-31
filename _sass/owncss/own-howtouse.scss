@@ -1,0 +1,6 @@
+.howtouse embed {
+    @include media-breakpoint-down(xs) {
+        width: 100%; 
+        height: auto;
+    }
+}
