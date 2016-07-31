@@ -1,8 +1,0 @@
-# Theme customization is done on this file instead of _config.yml so that
-# you don't have to restart Jekyll to see changes.
-
-
-# Possible values:
-# - webdesign
-# - technology
-atmosphere: technology
