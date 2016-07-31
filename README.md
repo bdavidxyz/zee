@@ -84,20 +84,21 @@ A section is a part of a landing page : pricing table, testimonial, our team, et
 
 Each section has many designs, so that can choose the one you prefer. For example :
 
- - Designs of pricing tables : pricingtable0, pricingtable1, pricingtable2, etc
- - Designs of testimonials   : testimonial0, testimonial1, testimonial2, etc
+ - Designs of pricing tables : pricingtable1, pricingtable2, etc
+ - Designs of testimonials   : testimonial1, testimonial2, etc
+ - Designs of navigation bars   : navbar1, navbar2, etc
 
 For a given design, there are 3 file, for example : 
- - _includes/html/zee/pricingtable0.html (HTML is mantory)
- - _sass/zee/pricingtable0.scss (CSS file may or may not be required)
- - _includes/javascript/zee/pricingtable0.js.html (JS file, may or may not be required)
+ - _includes/html/zee/navbar1.html (HTML is mantory)
+ - _sass/zee/navbar1.scss (CSS file may or may not be required)
+ - _includes/javascript/zee/navbar1.js.html (JS file, may or may not be required)
 
 **⚠️ You must include all needed files (min 1 - max 3) for a given section (see below)⚠️**
 
 
 ### How to include a section
 
-Example with pricingtable0.
+Example with navbar1.
 
 Inclusion of html : in file **index.html**
 
@@ -105,21 +106,21 @@ Inclusion of html : in file **index.html**
   <!--include HTML section here, 
   don't forget to include SCSS and JS 
   for a given section, if apply-->
-  {% include html/zee/pricingtable0.html %}
+  {% include html/zee/navbar1.html %}
 ```
 
 Inclusion of css (if apply) : in file **css/main.scss**
 
 ```css
 //Import SCSS of sections here
-@import "zee/pricingtable0";
+@import "zee/navbar1";
 ```
 
 Inclusion of js  (if apply) : in file **_layout/default.html**
 
 ```js
     <!--startjs-->
-      {% include javascript/zee/pricingtable0.js.html %}
+      {% include javascript/zee/navbar1.js.html %}
     <!--endjs-->
 ```
 (put the line right above the endjs comment to allow 3rd party lib to load first
