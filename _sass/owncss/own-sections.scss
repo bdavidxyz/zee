@@ -1,0 +1,31 @@
+.sections {
+  embed {
+    width: 100%;
+    height: auto;
+  }
+  .feature1__sub-image {
+    border: 1px solid $gray-lighter;
+  }
+  .thin-separator {
+    margin-top:0.5rem;
+  }
+  .row {
+    @include media-breakpoint-down(sm) {
+      margin-left: 0; 
+      margin-right: 0; 
+    }
+  }
+}
+
+.sections__img-left {
+ @extend .col-md-5;
+ width:100%;
+}
+
+.sections__text-right {
+  @extend .col-md-7;
+  @include media-breakpoint-down(md) {
+    margin-top: 1rem; 
+  }
+  align-self:center;
+}
