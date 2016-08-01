@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>zee</title>
-    <description>Zee is an free, awesome, conversion-first landing page builder
+    <description>Documentation of zee
 </description>
     <link>/zee/</link>
     <atom:link href="/zee/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 01 Aug 2016 21:08:24 +0200</pubDate>
-    <lastBuildDate>Mon, 01 Aug 2016 21:08:24 +0200</lastBuildDate>
+    <pubDate>Mon, 01 Aug 2016 21:09:39 +0200</pubDate>
+    <lastBuildDate>Mon, 01 Aug 2016 21:09:39 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
   </channel>
