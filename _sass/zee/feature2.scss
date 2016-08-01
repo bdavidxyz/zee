@@ -1,0 +1,21 @@
+
+.feature2__sub {
+  width: 100%;
+  .container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.feature2__sub-text {
+  padding-left:.5rem;
+  padding-right:.5rem;
+}
+
+.feature2__sub-image {
+  width: 50%; 
+  margin: 0 auto;
+  @include media-breakpoint-up(md) {
+    width: 100%;
+  }
+}
