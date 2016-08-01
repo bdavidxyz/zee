@@ -1,0 +1,38 @@
+
+.pricingtable1 {
+
+  text-align: center;
+  .list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: none; /* reset border and redefine below */
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .card-block {
+    background-color: $gray-lightest;
+  }
+  .list-group-item:nth-child(even) {
+    background-color: $gray-lightest;
+  }
+}
+
+.pricingtable1__deck {
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    .card {
+      flex: 3 1 0%;
+      margin-left: 2rem;
+    }
+    .card:first-child {
+      margin-left: 0;
+    }
+
+  }
+}
