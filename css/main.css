@@ -1,4 +1,32 @@
 @charset "UTF-8";
+/* roboto-condensed-700 - latin */
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Condensed Bold"), local("RobotoCondensed-Bold"), url("/zee/fonts/roboto-condensed/roboto-condensed-v13-latin-700.woff2") format("woff2"), url("/zee/fonts/roboto-condensed/roboto-condensed-v13-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+/* roboto-300 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"), url("/zee/fonts/roboto/roboto-v15-latin-300.woff2") format("woff2"), url("/zee/fonts/roboto/roboto-v15-latin-300.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"), url("/zee/fonts/roboto/roboto-v15-latin-regular.woff2") format("woff2"), url("/zee/fonts/roboto/roboto-v15-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+/* roboto-700 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Bold"), local("Roboto-Bold"), url("/zee/fonts/roboto/roboto-v15-latin-700.woff2") format("woff2"), url("/zee/fonts/roboto/roboto-v15-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
 /* Define variable here
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Variables from template
