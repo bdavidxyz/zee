@@ -5,7 +5,7 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Import sass file here
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/*!
+/*
  * Bootstrap v4.0.0-alpha.2 (http://getbootstrap.com)
  * Copyright 2011-2016 The Bootstrap Authors
  * Copyright 2011-2016 Twitter, Inc.
@@ -5770,7 +5770,7 @@ h4.component-title {
 .btn:focus, .hero-button:focus, .navbar__btn:focus {
   outline: 0; }
 
-/*!
+/*
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license
 
