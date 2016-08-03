@@ -251,20 +251,20 @@
                     <g id="Group-9" transform="translate(0.000000, 23.000000)">
                         <path d="M2.5,5 L2.5,13" id="Line" stroke="#EDF1F5" stroke-linecap="square"></path>
                         <path d="M27.0573986,-11.9426014 L27.0573986,38.0673981" id="Line" stroke="#EDF1F5" stroke-linecap="square" transform="translate(27.057399, 13.500000) rotate(-270.000000) translate(-27.057399, -13.500000) "></path>
-                        <use id="Oval-70" stroke="#55ADF6" mask="url(#mask-35)" stroke-width="2" xlink:href="#path-34"></use>
-                        <use id="Oval-70-Copy" stroke="#55ADF6" mask="url(#mask-37)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-36"></use>
+                        <use id="Oval-70" stroke="#6b15a1" mask="url(#mask-35)" stroke-width="2" xlink:href="#path-34"></use>
+                        <use id="Oval-70-Copy" stroke="#6b15a1" mask="url(#mask-37)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-36"></use>
                     </g>
                     <g id="Group-9-Copy-2" transform="translate(80.000000, 0.000000)">
                         <path d="M16.5,4.5 L16.5,31" id="Line" stroke="#EDF1F5" stroke-linecap="square"></path>
                         <path d="M9.5,24.5 L9.5,38.0673981" id="Line" stroke="#EDF1F5" stroke-linecap="square" transform="translate(9.500000, 31.500000) rotate(-270.000000) translate(-9.500000, -31.500000) "></path>
-                        <use id="Oval-70" stroke="#55ADF6" mask="url(#mask-39)" stroke-width="2" xlink:href="#path-38"></use>
-                        <use id="Oval-70-Copy" stroke="#55ADF6" mask="url(#mask-41)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-40"></use>
+                        <use id="Oval-70" stroke="#6b15a1" mask="url(#mask-39)" stroke-width="2" xlink:href="#path-38"></use>
+                        <use id="Oval-70-Copy" stroke="#6b15a1" mask="url(#mask-41)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-40"></use>
                     </g>
                     <g id="Group-9-Copy" transform="translate(14.000000, 67.000000)">
                         <path d="M2.5,2.5 L2.5,18.5" id="Line" stroke="#EDF1F5" stroke-linecap="square"></path>
                         <path d="M24.5573986,-20.4426014 L24.5573986,24.5685081" id="Line" stroke="#EDF1F5" stroke-linecap="square" transform="translate(24.557399, 2.500000) rotate(-270.000000) translate(-24.557399, -2.500000) "></path>
-                        <use id="Oval-70" stroke="#55ADF6" mask="url(#mask-43)" stroke-width="2" xlink:href="#path-42"></use>
-                        <use id="Oval-70-Copy" stroke="#55ADF6" mask="url(#mask-45)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-44"></use>
+                        <use id="Oval-70" stroke="#6b15a1" mask="url(#mask-43)" stroke-width="2" xlink:href="#path-42"></use>
+                        <use id="Oval-70-Copy" stroke="#6b15a1" mask="url(#mask-45)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-44"></use>
                     </g>
                 </g>
             </g>
