@@ -4,45 +4,6 @@
 
 @charset "utf-8";
 
-/* roboto-condensed-700 - latin */
-@font-face {
-  font-family: 'Roboto Condensed';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'),
-       url('{{site.baseurl}}/fonts/roboto-condensed/roboto-condensed-v13-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('{{site.baseurl}}/fonts/roboto-condensed/roboto-condensed-v13-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* roboto-300 - latin */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Roboto Light'), local('Roboto-Light'),
-       url('{{site.baseurl}}/fonts/roboto/roboto-v15-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('{{site.baseurl}}/fonts/roboto/roboto-v15-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* roboto-regular - latin */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'),
-       url('{{site.baseurl}}/fonts/roboto/roboto-v15-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('{{site.baseurl}}/fonts/roboto/roboto-v15-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* roboto-700 - latin */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Roboto Bold'), local('Roboto-Bold'),
-       url('{{site.baseurl}}/fonts/roboto/roboto-v15-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('{{site.baseurl}}/fonts/roboto/roboto-v15-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
 
 
 /* Define variable here
@@ -90,7 +51,7 @@ $spacers: (
   $headings-font-family:    "Roboto Condensed", sans-serif;
   $font-family-base:        "Roboto", sans-serif;
   $small-font-size:         90%;
-  $brand-primary:           #6b15a1;
+  $brand-primary:           #118C4E;
   $font-size-base:          1.15rem;
   $lead-font-size:          1.3rem;
   $font-size-h3:            1.4rem; 
@@ -99,17 +60,20 @@ $spacers: (
   $headings-font-family:    "Bangers", sans-serif;
   $font-family-base:        "Droid serif", sans-serif;
   $small-font-size:         90%;
-  $brand-primary:           #03A9F4;
+  $brand-primary:           #118C4E;
   $font-size-base:          1.15rem;
   $lead-font-size:          1.3rem;
   $font-size-h3:            1.4rem; 
   $font-size-h4:            1.2rem;
+  .main strong {
+    font-weight: bold;
+  }
   {% else %} 
   //CREATE YOUR OWN THEME BELOW
   // $headings-font-family:    "Bangers", sans-serif;
   // $font-family-base:        "Droid serif", sans-serif;
   // $small-font-size:         90%;
-  // $brand-primary:           #6b15a1;
+  // $brand-primary:           #118C4E;
   // $font-size-base:          1.15rem;
   // $lead-font-size:          1.3rem;
   // $font-rsize-h3:            1.5rem; 

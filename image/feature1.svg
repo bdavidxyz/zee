@@ -158,11 +158,11 @@
                             <g id="illustration" mask="url(#mask-14)" stroke-width="2" fill="#FFFFFF">
                                 <g transform="translate(29.000000, 53.000000)">
                                     <use id="Triangle-1" stroke="#EDF1F5" mask="url(#mask-17)" transform="translate(20.089983, 10.549351) rotate(21.000000) translate(-20.089983, -10.549351) " xlink:href="#path-16"></use>
-                                    <use id="Triangle-1-Copy" stroke="#6b15a1" mask="url(#mask-19)" transform="translate(42.472525, 33.582000) rotate(-30.000000) translate(-42.472525, -33.582000) " xlink:href="#path-18"></use>
+                                    <use id="Triangle-1-Copy" stroke="#118C4E" mask="url(#mask-19)" transform="translate(42.472525, 33.582000) rotate(-30.000000) translate(-42.472525, -33.582000) " xlink:href="#path-18"></use>
                                     <use id="Rectangle-81" stroke="#EDF1F5" mask="url(#mask-21)" transform="translate(25.801124, 37.123310) rotate(-23.000000) translate(-25.801124, -37.123310) " xlink:href="#path-20"></use>
-                                    <use id="Rectangle-81-Copy" stroke="#6b15a1" mask="url(#mask-23)" transform="translate(33.083859, 5.406046) rotate(20.000000) translate(-33.083859, -5.406046) " xlink:href="#path-22"></use>
+                                    <use id="Rectangle-81-Copy" stroke="#118C4E" mask="url(#mask-23)" transform="translate(33.083859, 5.406046) rotate(20.000000) translate(-33.083859, -5.406046) " xlink:href="#path-22"></use>
                                     <use id="Oval-17" stroke="#EDF1F5" mask="url(#mask-25)" xlink:href="#path-24"></use>
-                                    <use id="Oval-17-Copy" stroke="#6b15a1" mask="url(#mask-27)" xlink:href="#path-26"></use>
+                                    <use id="Oval-17-Copy" stroke="#118C4E" mask="url(#mask-27)" xlink:href="#path-26"></use>
                                 </g>
                             </g>
                             <g id="headline" mask="url(#mask-14)" fill="#EDF1F5">
@@ -178,16 +178,16 @@
                                         <rect id="li-1" fill="#EDF1F5" x="0" y="0.5" width="13" height="5"></rect>
                                         <rect id="li-1" fill="#EDF1F5" x="17" y="0.5" width="13" height="5"></rect>
                                         <g id="cta-small" transform="translate(35.000000, 0.000000)">
-                                            <rect id="Rectangle-99" fill="#6b15a1" x="2" y="2.5" width="5" height="1"></rect>
-                                            <rect id="Rectangle-99-Copy" fill="#6b15a1" x="8" y="2.5" width="3" height="1"></rect>
-                                            <use id="li-3" stroke="#6b15a1" mask="url(#mask-29)" stroke-width="2" xlink:href="#path-28"></use>
+                                            <rect id="Rectangle-99" fill="#118C4E" x="2" y="2.5" width="5" height="1"></rect>
+                                            <rect id="Rectangle-99-Copy" fill="#118C4E" x="8" y="2.5" width="3" height="1"></rect>
+                                            <use id="li-3" stroke="#118C4E" mask="url(#mask-29)" stroke-width="2" xlink:href="#path-28"></use>
                                         </g>
                                     </g>
                                 </g>
                             </g>
                             <g id="CTA" mask="url(#mask-14)">
                                 <g transform="translate(106.000000, 89.000000)">
-                                    <rect id="Rectangle-104" fill="#6b15a1" x="0" y="0" width="46" height="12" rx="6"></rect>
+                                    <rect id="Rectangle-104" fill="#118C4E" x="0" y="0" width="46" height="12" rx="6"></rect>
                                     <rect id="Rectangle-105" fill="#FFFFFF" x="5" y="5" width="22" height="2"></rect>
                                     <rect id="Rectangle-105-Copy" fill="#FFFFFF" x="30" y="5" width="9" height="2"></rect>
                                 </g>
