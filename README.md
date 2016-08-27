@@ -21,6 +21,10 @@
     - [3. Change atmosphere quickly](#3-change-atmosphere-quickly)
     - [4. Deploy to GitHub pages](#4-deploy-to-github-pages)
 - [Directory structure](#directory-structure)
+- [Add 3rd party lib](#add-3rd-party-lib)
+  - [Add a Javascript lib](#add-a-javascript-lib)
+  - [Add a CSS lib](#add-a-css-lib)
+  - [Add a SASS lib](#add-a-sass-lib)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -127,6 +131,11 @@ c. copy/paste the code of flipclock.js inside the "script" tag
 
 d. optionnally remove the exclamation mark when you encounter comments like /*! 
 
+e. include the lib in the build pipeline inside <code>_layouts/default.html</code>
+
+```html
+{% include javascript/flipclock/flipclock.js.html %} 
+```
 
 ### Add a CSS lib
 
@@ -143,6 +152,9 @@ d. in file css/main.scss, above comment <code>// end-extlib </code>, add the cod
 ```sass
 @import "flipclock/flipclock.css";
 ```
+
+
+      
 
 
 
