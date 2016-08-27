@@ -12,24 +12,28 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  
 
-- [Zee](#zee)
-  - [Quickstart](#quickstart)
-    - [Prerequisite](#prerequisite)
-    - [Develop](#develop)
-    - [Deploy](#deploy)
-  - [Sections](#sections)
-    - [What it is](#what-it-is)
-    - [How to include a section](#how-to-include-a-section)
-  - [Customization](#customization)
-    - [Change theme](#change-theme)
-    - [Build your own theme](#build-your-own-theme)
-    - [Cutomize a section](#cutomize-a-section)
-  - [Warnings](#warnings)
-    - [Bootstrap 4 officially not yet ready](#bootstrap-4-officially-not-yet-ready)
-    - [Bootstrap Javascript is disabled](#bootstrap-javascript-is-disabled)
+- [Intro](#intro)
+- [Quickstart](#quickstart)
+  - [Prerequisite](#prerequisite)
+  - [Develop](#develop)
+    - [1. Scaffold and start a server](#1-scaffold-and-start-a-server)
+    - [2. Add, edit, remove as many section as you need](#2-add-edit-remove-as-many-section-as-you-need)
+    - [3. Change atmosphere quickly](#3-change-atmosphere-quickly)
+    - [4. Deploy to GitHub pages](#4-deploy-to-github-pages)
+- [Directory structure](#directory-structure)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+
+## Intro
+
+Zee allows you to create a clean, minimalistic but well-targeted, high-converting landing page.
+
+The landing page you will get is based on Bootstrap 4, jQuery 2, Google Analytics. 
+
+You can of course add any 3rd party-lib, and customize the page as much as you want.
+
+Deployment will occur on GitHub pages by default.
 
 
 
@@ -41,132 +45,120 @@
  - [Ruby](https://www.ruby-lang.org/en/downloads/) - use the installer
  - [Jekyll](https://jekyllrb.com/) - ```$ gem install jekyll```
  - [NodeJS](https://nodejs.org/en/download/) - use the installer.
- - [GulpJS](http://gulpjs.com/GulpJS) - ```$ npm install -g gulp ```
 
-Tested with : node 5.11.1, npm 3.8.6, gulp 3.9.1, jekyll 3.1.6, ruby 2.3.0
+Tested with : node 5.12.0, jekyll 3.1.6, ruby 2.3.0
 
 ### Develop
 
+
+#### 1. Scaffold and start a server
 
 ```shell
 
 $ git clone https://github.com/bdavidxyz/zee
 $ cd zee
 $ npm install
-$ gulp
- # The browser launches itself,
- # and will rebuild and live-reload each time you
- # change a file
+$ npm run generator # will scaffold the entire directory structure
+$ npm run locally # opens a browser that will auto-refresh on every change
 ```
 
-Change text inside _includes/ownhtml/own-hero0.html.
-
-The change should reflect in the browser immediately.
-
-### Deploy
-
-The tool comes with a prebuilt command to deploy to github pages : it's free.
+#### 2. Add, edit, remove as many section as you need
 
 ```shell
 
-$ gulp deploy
- # You can view and share your website at https://github.com/<your_github_name>/<your_github_repo>
+$ npm run add-section # will ask you which section you want to add
+$ npm run rm-section # will ask you which section you want to remove
+```
+
+#### 3. Change atmosphere quickly
+
+```shell
+
+$ npm run update-theme # will ask you which heading font, display font and primary color you want
+```
+
+#### 4. Deploy to GitHub pages
+
+```shell
+
+$ npm run deploy
+ # your website can be see at 
 ```
 
 
-## Sections
+## Directory structure
 
-You build a unique one-page website by adding and editing sections.
+Here are the interesting parts
 
-### What it is
-
-A section is a part of a landing page : pricing table, testimonial, our team, etc.
-
-Each section has many designs, so that can choose the one you prefer. For example :
-
- - Designs of pricing tables : pricingtable1, pricingtable2, etc
- - Designs of testimonials   : testimonial1, testimonial2, etc
- - Designs of navigation bars   : navbar1, navbar2, etc
-
-For a given design, there are 3 file, for example : 
- - _includes/html/zee/navbar1.html (HTML is mantory)
- - _sass/zee/navbar1.scss (CSS file may or may not be required)
- - _includes/javascript/zee/navbar1.js.html (JS file, may or may not be required)
-
-**⚠️ You must include all needed files (min 1 - max 3) for a given section (see below)⚠️**
-
-
-### How to include a section
-
-Example with navbar1.
-
-Inclusion of html : in file **index.html**
-
-```html
-  <!--include HTML section here, 
-  don't forget to include SCSS and JS 
-  for a given section, if apply-->
-  {% include html/zee/navbar1.html %}
+```shell
+-index.html        # Sections are included here.
+-_includes/
+  |__html/
+    |__zee/        # Here are HTML of sections you may want to modify 
+  |__javascript/
+    |__bootstrap/  # 3rd party JS lib like bootstrap.js
+    |__zee/        # JS of sections
+-_sass/
+  |__zee/          # CSS of sections
+  |__bootstrap/    # 3rd party CSS lib like bootstrap.scss
 ```
 
-Inclusion of css (if apply) : in file **css/main.scss**
 
-```css
-//Import SCSS of sections here
-@import "zee/navbar1";
+## Add 3rd party lib
+
+As of now, the inclusion of a 3rd party lib is manual.
+
+I'm working on a more declarative way to solve this.
+
+### Add a Javascript lib
+
+Example with flipclock.js
+
+a. create a new file _includes/javascript/flipclock/flipclock.js.html
+
+b. insert in the file the code below
+
+```javascript
+<script type="text/javascript">
+</script>
 ```
 
-Inclusion of js  (if apply) : in file **_layout/default.html**
+c. copy/paste the code of flipclock.js inside the "script" tag
 
-```js
-    <!--startjs-->
-      {% include javascript/zee/navbar1.js.html %}
-    <!--endjs-->
-```
-(put the line right above the endjs comment to allow 3rd party lib to load first
-)
+d. optionnally remove the exclamation mark when you encounter comments like /*! 
 
 
+### Add a CSS lib
 
-## Customization
+Example with flipclock.css
 
-### Change theme
+a. copy flipclock.css into _sass/flipclock/flipclock.css
 
-You can change theme by editing _data/theme.yml.
-Choose amongst the availables pre-defined themes.
+b. optionnally remove the exclamation mark when you encounter comments like /*! 
 
-You are encouraged to create your own theme, it's very easy and may suit your needs better.
+c. optionnally remove all vendor prefixes of the css lib.
 
+d. in file css/main.scss, above comment <code>// end-extlib </code>, add the code below
 
-### Build your own theme
-
-There are very few changes to make in order to get a new theme.
-
-Open css/main.scss, and look for line
-
-```
-//CREATE YOUR OWN THEME BELOW
+```sass
+@import "flipclock/flipclock.css";
 ```
 
-And modify listed parameters under this comment.
-There are not so many parameters to change, 
-
-### Cutomize a section
-
-Each section is basically a bootstrap 4 snippet. 
-There are very few changes compared to plain old bootstrap.
-Even the theme variables are actually bootstrap-based SASS variables.
-
-If you already met this framework, even in lower version, customize and create a section should be very easy.
 
 
-## Warnings
+### Add a SASS lib
 
-### Bootstrap 4 officially not yet ready
+Example with bourbon.scss
 
-But used here, the use of flexbox is very convenient in many scenarii, amongst other goodies.
+a. copy all file & folders of bourbon _sass/bourbon
 
-### Bootstrap Javascript is disabled
+b. optionnally remove the exclamation mark when you encounter comments like /*! 
 
-High performance is a high priority for the tool, therefore Javascript modules are disable. Simply uncomment them in _layouts/default.html to use them.
+c. optionnally remove all vendor prefixes of the css lib.
 
+d. in file css/main.scss, above comment <code>// end-extlib </code>, add the code below
+
+```sass
+@import "bourbon/bourbon.scss"; // the main entry point of the SASS lib
+```
+ 
