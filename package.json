@@ -1,4 +1,8 @@
 {
+  "//": "----------------------------------------------------------", 
+  "//": "THIS FILE WILL BE OVERWRITTEN WHEN RUN NPM RUN SCAFFOLDING", 
+  "//": "----------------------------------------------------------", 
+
   "name": "zee",
   "version": "0.1.0",
   "description": "A dead simple, conversion-focused landing page builder",

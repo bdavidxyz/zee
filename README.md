@@ -29,6 +29,9 @@
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 
+
+
+
 ## Intro
 
 Zee allows you to create a clean, minimalistic but well-targeted, high-converting landing page.
@@ -38,6 +41,8 @@ The landing page you will get is based on Bootstrap 4, jQuery 2, Google Analytic
 You can of course add any 3rd party-lib, and customize the page as much as you want.
 
 Deployment will occur on GitHub pages by default.
+
+
 
 
 
@@ -52,6 +57,7 @@ Deployment will occur on GitHub pages by default.
 
 Tested with : node 5.12.0, jekyll 3.1.6, ruby 2.3.0
 
+
 ### Develop
 
 
@@ -62,8 +68,8 @@ Tested with : node 5.12.0, jekyll 3.1.6, ruby 2.3.0
 $ git clone https://github.com/bdavidxyz/zee
 $ cd zee
 $ npm install
-$ npm run generator # will scaffold the entire directory structure
-$ npm run locally # opens a browser that will auto-refresh on every change
+$ npm run generate # will scaffold the entire directory structure
+$ npm run local # opens a browser that will auto-refresh on every change
 ```
 
 #### 2. Add, edit, remove as many section as you need
@@ -81,6 +87,18 @@ $ npm run rm-section # will ask you which section you want to remove
 $ npm run update-theme # will ask you which heading font, display font and primary color you want
 ```
 
+For the fonts, use the google format, as the example below
+
+<code><span style="color:grey">Which font do you want as heading ? (type name of a google web font)</span> Roboto+Condensed:700</code>
+
+<code>Which font do you want as display ? (type name of a google web font) Roboto:300,400,700</code>
+
+<code>Which color do you want as primary color ? (for ex. #0275d8) blue</code>
+
+The tool was primarily designed with these two font above, so try to stick to the font weight to have a better user experience.
+
+
+
 #### 4. Deploy to GitHub pages
 
 ```shell
@@ -88,6 +106,9 @@ $ npm run update-theme # will ask you which heading font, display font and prima
 $ npm run deploy
  # your website can be see at 
 ```
+
+
+
 
 
 ## Directory structure
@@ -108,13 +129,17 @@ Here are the interesting parts
 ```
 
 
+
+
+
 ## Add 3rd party lib
 
 As of now, the inclusion of a 3rd party lib is manual.
 
 I'm working on a more declarative way to solve this.
 
-### Add a Javascript lib
+
+### Add a   Javascript lib
 
 Example with flipclock.js
 
@@ -152,10 +177,6 @@ d. in file css/main.scss, above comment <code>// end-extlib </code>, add the cod
 ```sass
 @import "flipclock/flipclock.css";
 ```
-
-
-      
-
 
 
 ### Add a SASS lib
