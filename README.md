@@ -74,6 +74,8 @@ $ npm run local # opens a browser that will auto-refresh on every change
 
 #### 2. Add, edit, remove as many section as you need
 
+Open another tab in your CLI
+
 ```shell
 
 $ npm run add-section # will ask you which section you want to add
@@ -101,12 +103,13 @@ The tool was primarily designed with these two font above, so try to stick to th
 
 #### 4. Deploy to GitHub pages
 
-```shell
+- 1) **Stop the local server (Ctrl + c) in the command-line**
+- 2) Empty the local git configuration <code>$ rm -rf .git</code>
 
-$ npm run deploy
- # your website can be see at 
-```
 
+
+- 3) **create a GitHub repository** and **hook it to your project** by following this tutorial : https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
+- 4) run this command <code>$ npm run deploy</code>
 
 
 
