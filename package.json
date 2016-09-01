@@ -17,7 +17,7 @@
     "slush-zee": "^0.1.2"
   },
   "scripts": {
-    "generate": "slush zee --overwriteAll"
+    "generate": "slush zee --skip-install"
   },
   "repository": {
     "type": "git",
